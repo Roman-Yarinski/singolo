@@ -1,62 +1,208 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="resetcss.css" />
+    <link rel="stylesheet" href="singolo1.css" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="singolo1.css">
-</head>
-<body>
-    <header class="main-header">
-        <div class="main-header__wrap container">
-            <a class="main-header__logo">singolo</a>
-            <nav class="main-header__navigation">
-                <ul class="main-header__items">
-                    <li class="main-header__item">
-                        <a href="#" class="main-header__link main-header__link_selected">home</a>
-                    </li>
-                    <li class="main-header__item">
-                        <a href="#" class="main-header__link">services</a>
-                    </li>
-                    <li class="main-header__item">
-                        <a href="#" class="main-header__link">portfolio</a>
-                    </li>
-                    <li class="main-header__item">
-                        <a href="#" class="main-header__link">about</a>
-                    </li>
-                    <li class="main-header__item">
-                        <a href="#" class="main-header__link">contact</a>
-                    </li>
-                </ul>
-            </nav>
+  </head>
+  <body>
+    <header class="header contener">
+      <div class="header__content">
+        <div class="header__item headerlogo">
+          <h1 class="headerlogo" href="#">singolo</h1>
         </div>
+        <nav class="header__item navigation">
+          <ul class="navigation__items">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link first_link">home</a>
+            </li>
+            <li class="navigation__item navigation__item_dot">·</li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">services</a>
+            </li>
+            <li class="navigation__item navigation__item_dot">·</li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">portfolio</a>
+            </li>
+            <li class="navigation__item navigation__item_dot">·</li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">about</a>
+            </li>
+            <li class="navigation__item navigation__item_dot">·</li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-bottom"></div>
     </header>
-    <div class="main-header__separator"></div>
-    <main class="main-content">
-        <section class="slider">
-            <div class="slider__wrap container">
-                <div class="slider__control">
-                    <img class="slider__control_left" src="assets/left-control.png" alt="arrow" width="16" height="27">
-                </div>
-                <div class="slider__content">
-                    <img src="assets/iPhones.png" alt="iPhones" width="797" height="483">
-                </div>
-                <div class="slider__control">
-                    <img class="slider__control_right" src="assets/right-control.png" alt="arrow" width="16" height="27">
-                </div>
-            </div>
-        </section>
-        <div class="slider-services__separator"></div>
-        <section class="services">
-            <div class="services__wrap">
-
-            </div>
-        </section>
-        <div class="services__separator"></div>
+    <main class="main contener">
+      <div class="main_contener">
+        <div class="slider__control">
+          <img
+            class="slider__control_left"
+            src="assets/left-control.png"
+            alt="arrow"
+            width="16"
+            height="27"
+          />
+        </div>
+        <div class="slider__content">
+          <img
+            src="assets/iPhones.png"
+            alt="iPhones"
+            width="797"
+            height="483"
+          />
+        </div>
+        <div class="slider__control">
+          <img
+            class="slider__control_right"
+            src="assets/right-control.png"
+            alt="arrow"
+            width="16"
+            height="27"
+          />
+        </div>
+      </div>
+      <div class="bottom__wraper"></div>
     </main>
-</body>
+    <div class="Our-Services contener">
+      <div class="Our-Services_contener">
+        <biv class="services__main">
+          <h2 class="services-titel">Our Services</h2>
+          <div class="services-text">
+            <p class="services-text services-text_first">
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris
+              condimentum. Duis mollis, non commodo luctus, nisi erat porttitor
+            </p>
+            <p class="services-text services-text_second">
+              ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac
+              cursus commodo, tortor mauris condimentum nibh.
+            </p>
+          </div>
+        </biv>
+        <div class="services__grid-contener">
+          <div class="services__grid-item">
+            <div class="services__grid-item_logo">
+              <img src="/assets/Pen.svg" alt="Pen" />
+            </div>
+            <div class="services__grid-item_text-area">
+              <p class="services__grid-item_text-area_title">
+                Custom Design
+              </p>
+              <p class="services__grid-item_text-area_subtitle_line-1">
+                Curabitur vestibulum eget mauris quis
+              </p>
+              <p class="services__grid-item_text-area_subtitle_line-2">
+                laoreet. Phasellus in quam laoreet, viverra <br />
+                lacus ut, ultrices velit.
+              </p>
+            </div>
+          </div>
+          <div class="services__grid-item services__grid-item_2">
+            <div class="services__grid-item_logo">
+              <img src="/assets/Bulb.svg" alt="Bulb" />
+            </div>
+            <div class="services__grid-item_text-area">
+              <p class="services__grid-item_text-area_title">
+                Inovative Ideas
+              </p>
+
+              <p class="services__grid-item_text-area_subtitle_line-1">
+                Quisque luctus, quam eget molestie com-
+              </p>
+
+              <p class="services__grid-item_text-area_subtitle_line-2">
+                modo, lacus purus cursus purus, nec
+              </p>
+              <p class="services__grid-item_text-area_subtitle_line-3">
+                rutrum tellus dolor id lorem.</p>
+              </p>
+            </div>
+          </div>
+          <div class="services__grid-item services__grid-item_3">
+            <div class="services__grid-item_logo">
+              <img src="/assets/Heart.svg" alt="Heart" />
+            </div>
+            <div class="services__grid-item_text-area">
+              <p class="services__grid-item_text-area_title">
+                Love Is The Answer
+              </p>
+              <p
+                class="services__grid-item_text-area_subtitle_line-1"
+              >
+                Nulla sed nunc et tortor luctus faucibus.</p>
+              <p class="services__grid-item_text-area_subtitle_line-2">
+                Morbi at aliquet turpis, et consequat felis.</p>
+                <p class="services__grid-item_text-area_subtitle_line-3">
+                Quisque condimentum.
+              </p>
+            </div>
+          </div>
+          <div class="services__grid-item services__grid-item_4">
+            <div class="services__grid-item_logo">
+              <img src="/assets/Phone.svg" alt="Phone" />
+            </div>
+            <div class="services__grid-item_text-area">
+              <p class="services__grid-item_text-area_title">
+                Responsive Layout
+              </p>
+              <p class="services__grid-item_text-area_subtitle_line-1">
+                Sed porttitor placerat rhoncus. In at nunc</p>
+                <p class="services__grid-item_text-area_subtitle_line-2"> 
+                tellus. Maecenas
+                blandit nunc ligula. Prae-</p>
+                <p class="services__grid-item_text-area_subtitle_line-3">
+                  sent elit leo.
+              </p>
+            </div>
+          </div>
+          <div class="services__grid-item services__grid-item_5">
+            <div class="services__grid-item_logo">
+              <img src="/assets/Bubble.svg" alt="Bubble" />
+            </div>
+            <div class="services__grid-item_text-area">
+              <p class="services__grid-item_text-area_title">
+                24 / 7 Support
+              </p>
+              <p class="services__grid-item_text-area_subtitle_line-1">
+                Vivamus vel quam lacinia, tincidunt dui</p>
+                <p class="services__grid-item_text-area_subtitle_line-2"> 
+                  non, vehicula nisi.
+                Nulla a sem erat. Pellen-</p>
+                <p class="services__grid-item_text-area_subtitle_line-3">
+                tesque egestas venenatis lorem .
+              </p>
+            </div>
+          </div>
+          <div class="services__grid-item services__grid-item_6">
+            <div class="services__grid-item_logo">
+              <img src="/assets/Star.svg" alt="Star" />
+            </div>
+            <div class="services__grid-item_text-area">
+              <p class="services__grid-item_text-area_title">
+                Feel Like A Star
+              </p>
+
+              <p class="services__grid-item_text-area_subtitle_line-1">
+                Quisque hendrerit purus dapibus, ornare</p>
+                <p class="services__grid-item_text-area_subtitle_line-2">nibh vitae, viverra
+                nibh. Fusce vitae</p> 
+                <p class="services__grid-item_text-area_subtitle_line-3">aliquam tellus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Our-Services-bottom"></div>
+    </div>
+  </body>
 </html>
