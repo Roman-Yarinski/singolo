@@ -8,7 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="singolo.css" />
-    <title>Document</title>
+    <title>Singolo</title>
   </head>
   <body>
       <!-- SVG-->
@@ -75,7 +75,7 @@
     <header class="header contener">
       <div class="header__content">
         <div class="header__item headerlogo">
-          <h1 class="headerlogo" href="#">singolo</h1>
+          <h1 class="headerlogo" href="#">singolo<span class="headerlogo_after">*</span> </h1>
         </div>
         <nav class="header__item navigation">
           <ul class="navigation__items">
@@ -459,11 +459,11 @@
             tortor mauris condimentum nibh.
           </p>
           <div class="quote__content">
-            <form action="/" method="post" class="form">
+            <form action="#" method="post" class="form" target="_self">
               <input
                 type="text"
-                name=""
-                id=""
+                name="fname"
+                id="fname"
                 class="input"
                 placeholder="Name (Required)"
                 pattern="[a-zA-Zа-яА-Я]+"
@@ -471,16 +471,16 @@
               />
               <input
                 type="email"
-                name=""
-                id=""
+                name="mail"
+                id="email"
                 class="input"
                 placeholder="Email (Required)"
                 required
               />
               <input
                 type="text"
-                name=""
-                id=""
+                name="Subject"
+                id="Subject"
                 class="input"
                 placeholder="Subject"
               />
@@ -492,7 +492,7 @@
                 class="input coment"
                 placeholder="Describe your project in detail..."
               ></textarea>
-              <button type="submit" class="button">Submit</button>
+              <input type="submit" class="button" value="Submit"></input>
             </form>
             <div class="contact-information">
               <h3 class="contact-information_title">Contact Information</h3>
@@ -524,11 +524,7 @@
                 </li>
                 <li class="contact__iner_list">
                   <a href="mailto:info@singolo.com" class="contact__iner_link">
-                    <img
-                      src="/assets/singolo3_contact_info/mail.png"
-                      alt="Mail"
-                    />
-                    info@singolo.com
+                    <img src="/assets/singolo3_contact_info/mail.png"/>info@singolo.com
                   </a>
                 </li>
               </ul>
