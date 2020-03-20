@@ -11,8 +11,10 @@
     <title>Singolo</title>
   </head>
   <body>
-      <!-- SVG-->
-     <svg style="display: none">
+      
+    <!-- SVG-->
+    
+    <svg style="display: none">
         <symbol id="facebook" viewBox="0 0 470.513 470.513">
           <g>
             <path
@@ -71,70 +73,92 @@
           </g>
         </symbol>
       </svg>
+      
       <!-- /SVG -->
+
     <header class="header contener">
       <div class="header__content">
         <div class="header__item headerlogo">
           <h1 class="headerlogo" href="#">singolo<span class="headerlogo_after">*</span> </h1>
         </div>
         <nav class="header__item navigation">
-          <ul class="navigation__items">
+          <ul id="menu" class="navigation__items">
             <li class="navigation__item">
-              <a href="#" class="navigation__link first_link">home</a>
+              <a href="#home" class="navigation__link first_link navigation_active">home</a>
             </li>
             <li class="navigation__item navigation__item_dot">·</li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">services</a>
+              <a href="#services" class="navigation__link ">services</a>
             </li>
             <li class="navigation__item navigation__item_dot">·</li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">portfolio</a>
+              <a href="#portfolio" class="navigation__link">portfolio</a>
             </li>
             <li class="navigation__item navigation__item_dot">·</li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">about</a>
+              <a href="#about" class="navigation__link">about</a>
             </li>
             <li class="navigation__item navigation__item_dot">·</li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">contact</a>
+              <a href="#contact" class="navigation__link">contact</a>
             </li>
           </ul>
         </nav>
       </div>
       <div class="header-bottom"></div>
     </header>
-    <main class="main contener">
-      <div class="main_contener">
-        <div class="slider__control">
-          <img
-            class="slider__control_left"
-            src="assets/left-control.png"
-            alt="arrow"
-            width="16"
-            height="27"
-          />
-        </div>
-        <div class="slider__content">
-          <img
-            src="assets/iPhones.png"
-            alt="iPhones"
-            width="797"
-            height="483"
-          />
-        </div>
-        <div class="slider__control">
-          <img
-            class="slider__control_right"
-            src="assets/right-control.png"
-            alt="arrow"
-            width="16"
-            height="27"
-          />
-        </div>
+    <section id="home" class="main contener"> 
+
+      <div class="slider__wrapper">
+
+            <div class="slider__item slide_1"> 
+              <div class="slider__content">
+                <img
+                  src="assets/iPhones.png"
+                  alt="iPhones1"
+                  width="797"
+                  height="483"
+                />
+              </div>
+              <div class="bottom__wraper"></div>
+            </div>
+            
+            <div class="slider__item slide_2">
+              <div class="slider__content">
+                <img
+                  src="assets/singolo_slider/Component 1.png"
+                  alt="iPhones2"
+                  width="797"
+                  height="483"
+                />
+              </div>
+              <div class="bottom__wraper"></div>
+            </div>
+
       </div>
-      <div class="bottom__wraper"></div>
-    </main>
-    <div class="Our-Services contener">
+
+      <a class="slider__control slider__control_left" href="#" role="button">
+        <img
+          class="slider__control slider__control_left"
+          src="assets/left-control.png"
+          alt="arrow"
+          width="16"
+          height="27"
+        />
+      </a>
+
+      <a class="slider__control slider__control_right" href="#" role="button">
+        <img
+          class="slider__control slider__control_right"
+          src="assets/right-control.png"
+          alt="arrow"
+          width="16"
+          height="27"/>
+      </a>
+
+    </section>
+
+    <section id="services" class="Our-Services contener">
       <div class="Our-Services_contener">
         <biv class="services__main">
           <h2 class="services-titel">Our Services</h2>
@@ -263,11 +287,11 @@
         </div>
       </div>
       <div class="Our-Services-bottom"></div>
-    </div>
+    </section>
 
     <!-- Singolo2 -->
   
-      <section class="portfolio">
+      <section id="portfolio" class="portfolio">
         <div class="contener">
           <h2 class="portfolio__title">Portfolio</h2>
           <p class="portfolio__subtitle">
@@ -275,7 +299,7 @@
             lacinia odio sem nec elit.
           </p>
           <div class="portfolio__menu">
-            <ul class="portfolio__list">
+            <ul class="portfolio__list" id="portfolio__menu">
               <li class="portfolio__list_item portfolio__list_item_active">
                 All
               </li>
@@ -284,48 +308,49 @@
               <li class="portfolio__list_item">Artwork</li>
             </ul>
           </div>
-          <div class="portfolio__iner">
-            <div class="portfolio__iner_item">
-              <img src="./assets/portfolio/Item-1.png" alt="1" />
+          <div id="portfolio__iner" class="portfolio__iner portfolio__iner_no-active">
+            <div class="portfolio__iner_item ">
+              <img class="portfolio_img" src="./assets/portfolio/Item-1.png" alt="1" />
             </div>
             <div class="portfolio__iner_item">
-              <img src="./assets/portfolio/Item-2.png" alt="2" />
+              
+              <img class="portfolio_img" src="./assets/portfolio/Item-2.png" alt="2" />
             </div>
             <div class="portfolio__iner_item">
-              <img src="./assets/portfolio/Item-3.png" alt="3" />
+              <img class="portfolio_img" src="./assets/portfolio/Item-3.png" alt="3" />
             </div>
             <div class="portfolio__iner_item">
-              <img src="./assets/portfolio/Item-4.png" alt="4" />
+              <img class="portfolio_img" src="./assets/portfolio/Item-4.png" alt="4" />
             </div>
             <div class="portfolio__iner_item">
-              <img src="./assets/portfolio/Item-5.png" alt="5" />
+              <img class="portfolio_img" src="./assets/portfolio/Item-5.png" alt="5" />
             </div>
             <div class="portfolio__iner_item">
-              <img src="./assets/portfolio/Item-6.png" alt="6" />
+              <img class="portfolio_img" src="./assets/portfolio/Item-6.png" alt="6" />
             </div>
             <div class="portfolio__iner_item">
-              <img src="./assets/portfolio/Item-7.png" alt="7" />
+              <img class="portfolio_img" src="./assets/portfolio/Item-7.png" alt="7" />
             </div>
             <div class="portfolio__iner_item">
-              <img src="./assets/portfolio/Item-8.png" alt="8" />
+              <img class="portfolio_img" src="./assets/portfolio/Item-8.png" alt="8" />
             </div>
             <div class="portfolio__iner_item">
-              <img src="./assets/portfolio/Item-9.png" alt="9" />
+              <img class="portfolio_img" src="./assets/portfolio/Item-9.png" alt="9" />
             </div>
             <div class="portfolio__iner_item">
-              <img src="./assets/portfolio/Item-10.png" alt="10" />
+              <img class="portfolio_img" src="./assets/portfolio/Item-10.png" alt="10" />
             </div>
             <div class="portfolio__iner_item">
-              <img src="./assets/portfolio/Item-11.png" alt="11" />
+              <img class="portfolio_img" src="./assets/portfolio/Item-11.png" alt="11" />
             </div>
             <div class="portfolio__iner_item">
-              <img src="./assets/portfolio/Item-12.png" alt="12" />
+              <img class="portfolio_img" src="./assets/portfolio/Item-12.png" alt="12" />
             </div>
           </div>
           <div class="portfolio-bottem"></div>
         </div>
       </section>
-      <section class="about-us">
+      <section id="about" class="about-us">
         <div class="contener">
           <h2 class="about-us__title">About Us</h2>
           <p class="about-us__subtitle_line-1">
@@ -449,7 +474,7 @@
 
       <!-- Singolo3 -->
 
-      <section class="quote">
+      <section id="contact" class="quote">
         <div class="contener">
           <h2 class="quote__title">Get a Quote</h2>
           <p class="quote__subtitle">
@@ -459,7 +484,7 @@
             tortor mauris condimentum nibh.
           </p>
           <div class="quote__content">
-            <form action="#" method="post" class="form" target="_self">
+            <form action="#" method="get" class="form" id="Fform">
               <input
                 type="text"
                 name="fname"
@@ -479,8 +504,8 @@
               />
               <input
                 type="text"
-                name="Subject"
-                id="Subject"
+                name="subject"
+                id="subject"
                 class="input"
                 placeholder="Subject"
               />
@@ -492,8 +517,12 @@
                 class="input coment"
                 placeholder="Describe your project in detail..."
               ></textarea>
-              <input type="submit" class="button" value="Submit"></input>
+              <input type="submit"  id="button" class="button" value="Submit"></input>
             </form>
+    
+           
+
+
             <div class="contact-information">
               <h3 class="contact-information_title">Contact Information</h3>
               <p class="contact-information_subtitle">
@@ -532,7 +561,23 @@
           </div>
           <div class="quote-bottom"></div>
         </div>
+          <!-- /* ///////////////////////////////////////////////////////////////// */ -->
+
+
+      <div id="message-block"  class="hidden">
+        <div id="message" >
+          <p>
+            <span>Письмо отправлено </span><br>
+            <span>Тема:</span><span id="rez-subject"></span><br>
+            <span>Описание:</span><span id="rez-coment"></span><br>
+          </p>
+          <button id="close-button">OK</button>
+        </div>
+      </div>
+
+      <!-- /* ///////////////////////////////////////////////////////////////// */ -->
       </section>
+     
       <footer class="footer">
         <div class="contener">
           <p class="copieright">© Copyright 2013</p>
@@ -560,6 +605,7 @@
           </div>
         </div>
       </footer>
+      <script src="./script.js"></script>
     </body>
   </html>  
   </body>
