@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link
       href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext"
       rel="stylesheet"
@@ -76,8 +77,57 @@
       
       <!-- /SVG -->
 
+      <!-- Burger -->
+
+      <div id="burger-block" class="burger hidden">
+
+        <div class="burger-contener">
+
+          <div class="burger-menu">
+            <a id="BURGER_CLOSE" href="#" class="burger-menu__button" >
+              <span class="burger-menu__lines"></span>
+            </a>
+          </div>
+
+          <p class="burger__headerlogo" href="#">singolo<span class="headerlogo_after">*</span> </p>
+
+          <ul id="burger_menu" class="burger__navigation__items">
+            <li class="navigation__item">
+              <a href="#home" class="navigation__link first_link burger__link navigation_active">home</a>
+            </li>
+           
+            <li class="navigation__item">
+              <a href="#services" class="navigation__link burger__link">services</a>
+            </li>
+            
+            <li class="navigation__item">
+              <a href="#portfolio" class="navigation__link burger__link">portfolio</a>
+            </li>
+           
+            <li class="navigation__item">
+              <a href="#about" class="navigation__link burger__link">about</a>
+            </li>
+          
+            <li class="navigation__item">
+              <a href="#contact" class="navigation__link burger__link">contact</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!-- /Burger -->
+
     <header class="header contener">
       <div class="header__content">
+
+        <div class="burger-menu">
+          <a id="BURGER" href="#" class="burger-menu__button" >
+            <span class="burger-menu__lines"></span>
+          </a>
+        </div>
+
         <div class="header__item headerlogo">
           <h1 class="headerlogo" href="#">singolo<span class="headerlogo_after">*</span> </h1>
         </div>
@@ -109,52 +159,52 @@
     </header>
     <section id="home" class="main contener"> 
 
-      <div class="slider__wrapper">
+      <div class="screen__control_1 screen__control" id="screen__control_1"> <img src="./assets/Screen_1.png" id="Screen_1" class="screen_1 hidden" alt="Screen"> </div>
+      <div class="screen__control_2 screen__control" id="screen__control_2"> <img src="./assets/Screen_2.png" id="Screen_2" class="screen_2 hidden" alt="Screen"> </div>
 
-            <div class="slider__item slide_1"> 
-              <div class="slider__content">
-                <img
-                  src="assets/iPhones.png"
-                  alt="iPhones1"
-                  width="797"
-                  height="483"
-                />
+        <div class="slider__wrapper">
+
+              <div class="slider__item slide_1"> 
+                <div class="slider__content">
+                  <img
+                    class="slider__img_1"
+                    src="assets/singolo_slider/slider-content_1.png"
+                    alt="Phones"
+                  />
+                </div>
+                <div class="bottom__wraper"></div>
               </div>
-              <div class="bottom__wraper"></div>
-            </div>
-            
-            <div class="slider__item slide_2">
-              <div class="slider__content">
-                <img
-                  src="assets/singolo_slider/Component 1.png"
-                  alt="iPhones2"
-                  width="797"
-                  height="483"
-                />
+              
+              <div class="slider__item slide_2">
+                <div class="slider__content">
+                  <img
+                    class="slider__img_2"
+                    src="assets/singolo_slider/slider-content_2.png"
+                    alt="Phones2"
+
+                  />
+                </div>
+                <div class="bottom__wraper"></div>
               </div>
-              <div class="bottom__wraper"></div>
-            </div>
+        </div>
+        <a class="slider__control slider__control_left" href="#" role="button">
+          <img
+            class="slider__control slider__control_left"
+            src="assets/left-control.png"
+            alt="arrow"
+            width="16"
+            height="27"
+          />
+        </a>
 
-      </div>
-
-      <a class="slider__control slider__control_left" href="#" role="button">
-        <img
-          class="slider__control slider__control_left"
-          src="assets/left-control.png"
-          alt="arrow"
-          width="16"
-          height="27"
-        />
-      </a>
-
-      <a class="slider__control slider__control_right" href="#" role="button">
-        <img
-          class="slider__control slider__control_right"
-          src="assets/right-control.png"
-          alt="arrow"
-          width="16"
-          height="27"/>
-      </a>
+        <a class="slider__control slider__control_right" href="#" role="button">
+          <img
+            class="slider__control slider__control_right"
+            src="assets/right-control.png"
+            alt="arrow"
+            width="16"
+            height="27"/>
+        </a>
 
     </section>
 
@@ -165,9 +215,7 @@
           <div class="services-text">
             <p class="services-text services-text_first">
               Fusce dapibus, tellus ac cursus commodo, tortor mauris
-              condimentum. Duis mollis, non commodo luctus, nisi erat porttitor
-            </p>
-            <p class="services-text services-text_second">
+              condimentum. Duis mollis, non commodo luctus, nisi erat porttitor 
               ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac
               cursus commodo, tortor mauris condimentum nibh.
             </p>
@@ -361,47 +409,61 @@
             ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac
             cursus commodo, tortor mauris condimentum nibh.
           </p>
+
           <div class="about-us__iner">
-            <div class="about-us__iner_item about-us__iner_photo">
-              <img src="./assets/About_Us/photo-1.png" alt="photo-1" />
+
+            <div class="about-us__iner_item">
+              <div class=" about-us__iner_photo">
+                <img class=" about-us__iner_photo" src="./assets/About_Us/photo-1.png" alt="photo-1" />
+              </div>
+              <p class=" about-us__iner_title about-us__iner_title-1">
+                Adam Jensen 
+              </p>
+              <p
+                class=" about-us__iner_subtitle about-us__subtitle-1"
+              >
+                Quisque luctus, quam eget molestie commodo, lacus purus cursus
+                purus, nec rutrum tellus dolor id lorem.
+              </p>
+              <div class=" about-us__iner_social">
+                <a class="about-us__iner_social-item" href="#">
+                  <svg class="social__icon">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                </a>
+                <a class="about-us__iner_social-item" href="#">
+                  <svg class="social__icon">
+                    <use xlink:href="#google"></use>
+                  </svg>
+                </a>
+                <a class="about-us__iner_social-item" href="#">
+                  <svg class="social__icon">
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                </a>
+                <a class="about-us__iner_social-item" href="#">
+                  <svg class="social__icon">
+                    <use xlink:href="#linkedin"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div class="about-us__iner_item about-us__iner_photo">
-              <img src="./assets/About_Us/photo-2.png" alt="photo-2" />
-            </div>
-            <div class="about-us__iner_item about-us__iner_photo">
-              <img src="./assets/About_Us/photo-3.png" alt="photo-3" />
-            </div>
-            <div class="about-us__iner_item about-us__iner_title">
-              Adam Jensen 
-            </div>
-            <div class="about-us__iner_item about-us__iner_title">
-              Desmond Miles
-            </div>
-            <div class="about-us__iner_item about-us__iner_title">
-              Scolara Visari
-            </div>
-  
-            <div
-              class="about-us__iner_item about-us__iner_subtitle about-us__subtitle-1"
-            >
-              Quisque luctus, quam eget molestie commodo, lacus purus cursus
-              purus, nec rutrum tellus dolor id lorem.
-            </div>
-            <div
-              class="about-us__iner_item about-us__iner_subtitle about-us__subtitle-2"
-            >
+
+            <div class="about-us__iner_item">
+              <div class="about-us__iner_photo">
+                <img class=" about-us__iner_photo" src="./assets/About_Us/photo-2.png" alt="photo-2" />
+              </div>
+              <div class=" about-us__iner_title about-us__iner_title-2">
+                Desmond Miles
+              </div>
+              <div
+              class=" about-us__iner_subtitle about-us__subtitle-2"
+              >
               Curabitur vestibulum eget mauris quis laoreet. Phasellus
               <br />
               in quam laoreet, viverra lacus ut, ultrices velit.
-            </div>
-            <div
-              class="about-us__iner_item about-us__iner_subtitle about-us__subtitle-3"
-            >
-              Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
-              et consequat felis. Quisque condimentum.
-            </div>
-  
-            <div class="about-us__iner_item about-us__iner_social">
+              </div>
+              <div class=" about-us__iner_social">
               <a class="about-us__iner_social-item" href="#">
                 <svg class="social__icon">
                   <use xlink:href="#facebook"></use>
@@ -422,51 +484,46 @@
                   <use xlink:href="#linkedin"></use>
                 </svg>
               </a>
+              </div>
             </div>
-            <div class="about-us__iner_item about-us__iner_social">
-              <a class="about-us__iner_social-item" href="#">
-                <svg class="social__icon">
-                  <use xlink:href="#facebook"></use>
-                </svg>
-              </a>
-              <a class="about-us__iner_social-item" href="#">
-                <svg class="social__icon">
-                  <use xlink:href="#google"></use>
-                </svg>
-              </a>
-              <a class="about-us__iner_social-item" href="#">
-                <svg class="social__icon">
-                  <use xlink:href="#twitter"></use>
-                </svg>
-              </a>
-              <a class="about-us__iner_social-item" href="#">
-                <svg class="social__icon">
-                  <use xlink:href="#linkedin"></use>
-                </svg>
-              </a>
+
+            <div class="about-us__iner_item">
+              <div class="about-us__iner_photo">
+                <img class=" about-us__iner_photo" src="./assets/About_Us/photo-3.png" alt="photo-3" />
+              </div>
+              <div class=" about-us__iner_title about-us__iner_title-3">
+                Scolara Visari
+              </div>
+              <div
+                class=" about-us__iner_subtitle about-us__subtitle-3"
+              >
+                Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
+                et consequat felis. Quisque condimentum.
+              </div>
+              <div class=" about-us__iner_social">
+                <a class="about-us__iner_social-item" href="#">
+                  <svg class="social__icon">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                </a>
+                <a class="about-us__iner_social-item" href="#">
+                  <svg class="social__icon">
+                    <use xlink:href="#google"></use>
+                  </svg>
+                </a>
+                <a class="about-us__iner_social-item" href="#">
+                  <svg class="social__icon">
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                </a>
+                <a class="about-us__iner_social-item" href="#">
+                  <svg class="social__icon">
+                    <use xlink:href="#linkedin"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div class="about-us__iner_item about-us__iner_social">
-              <a class="about-us__iner_social-item" href="#">
-                <svg class="social__icon">
-                  <use xlink:href="#facebook"></use>
-                </svg>
-              </a>
-              <a class="about-us__iner_social-item" href="#">
-                <svg class="social__icon">
-                  <use xlink:href="#google"></use>
-                </svg>
-              </a>
-              <a class="about-us__iner_social-item" href="#">
-                <svg class="social__icon">
-                  <use xlink:href="#twitter"></use>
-                </svg>
-              </a>
-              <a class="about-us__iner_social-item" href="#">
-                <svg class="social__icon">
-                  <use xlink:href="#linkedin"></use>
-                </svg>
-              </a>
-            </div>
+
           </div>
           <div class="about-us__bottom"></div>
         </div>
@@ -484,42 +541,43 @@
             tortor mauris condimentum nibh.
           </p>
           <div class="quote__content">
-            <form action="#" method="get" class="form" id="Fform">
-              <input
-                type="text"
-                name="fname"
-                id="fname"
-                class="input"
-                placeholder="Name (Required)"
-                pattern="[a-zA-Zа-яА-Я]+"
-                required
-              />
-              <input
-                type="email"
-                name="mail"
-                id="email"
-                class="input"
-                placeholder="Email (Required)"
-                required
-              />
-              <input
-                type="text"
-                name="subject"
-                id="subject"
-                class="input"
-                placeholder="Subject"
-              />
-              <textarea
-                name="coment"
-                id="coment"
-                cols="30"
-                rows="10"
-                class="input coment"
-                placeholder="Describe your project in detail..."
-              ></textarea>
-              <input type="submit"  id="button" class="button" value="Submit"></input>
-            </form>
-    
+            <div class="form__contener">
+              <form action="#" method="get" class="form" id="myform">
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  class="input"
+                  placeholder="Name (Required)"
+                  pattern="[a-zA-Zа-яА-Я]+"
+                  required
+                />
+                <input
+                  type="email"
+                  name="mail"
+                  id="email"
+                  class="input"
+                  placeholder="Email (Required)"
+                  required
+                />
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  class="input"
+                  placeholder="Subject"
+                />
+                <textarea
+                  name="coment"
+                  id="coment"
+                  cols="30"
+                  rows="10"
+                  class="input coment"
+                  placeholder="Describe your project in detail..."
+                ></textarea>
+                <input type="submit"  id="button" class="button" value="Submit"></input>
+              </form>
+            </div>
            
 
 
@@ -561,23 +619,8 @@
           </div>
           <div class="quote-bottom"></div>
         </div>
-          <!-- /* ///////////////////////////////////////////////////////////////// */ -->
-
-
-      <div id="message-block"  class="hidden">
-        <div id="message" >
-          <p>
-            <span>Письмо отправлено </span><br>
-            <span>Тема:</span><span id="rez-subject"></span><br>
-            <span>Описание:</span><span id="rez-coment"></span><br>
-          </p>
-          <button id="close-button">OK</button>
-        </div>
-      </div>
-
-      <!-- /* ///////////////////////////////////////////////////////////////// */ -->
       </section>
-     
+
       <footer class="footer">
         <div class="contener">
           <p class="copieright">© Copyright 2013</p>
@@ -605,8 +648,24 @@
           </div>
         </div>
       </footer>
+
+       <!-- /* ////////////////////////////   Modal_Window   ///////////////////////////////////// */ -->
+    
+      <div id="message-block" class="test contener hidden">
+        <div id="message">
+          <p >
+            <span class="message_content">Письмо отправлено </span><br>
+            <span id="rez-subject" class="message_content"></span><br>
+            <span id="rez-coment" class="message_content"></span><br>
+          </p>
+          <button id="close-button" >OK</button>
+      </div>
+
+        <!-- /* ///////////////////////////////////////////////////////////////// */ -->
+
       <script src="./script.js"></script>
     </body>
+    
   </html>  
   </body>
 </html>

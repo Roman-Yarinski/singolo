@@ -1,5 +1,37 @@
-//             ---  Header  ---
 
+
+/* Burger */
+const BURGER = document.getElementById("BURGER");
+const BURGER_CLOSE = document.getElementById("BURGER_CLOSE");
+const BURGER_LINK = document.getElementsByClassName("burger__link");
+const BURGER_BLOK = document.getElementById("burger-block");
+const BURGER_MENU = document.getElementById("burger_menu");
+
+BURGER.addEventListener("click", event => {
+  event.preventDefault();
+  BURGER_BLOK.classList.remove("hidden");
+});
+
+BURGER_CLOSE.addEventListener("click", event => {
+  BURGER_BLOK.classList.add("hidden");
+});
+
+
+
+BURGER_MENU.addEventListener("click", event => {
+  BURGER_MENU.querySelectorAll("a").forEach(el =>
+    el.classList.remove("navigation_active")
+  );
+  event.target.classList.add("navigation_active");
+  BURGER_BLOK.classList.add("hidden");
+});
+
+
+
+/* /Burger */
+
+
+//             ---  Header  ---
 
 // const MENU = document.getElementById("menu");
 
@@ -10,31 +42,40 @@
 //   event.target.classList.add("navigation_active");
 // });
 
-document.addEventListener('scroll', onScroll);
+
+document.addEventListener("scroll", onScroll);
 
 function onScroll(event) {
   const curPos = window.scrollY;
-  const sections = document.querySelectorAll('body>section');
-  const links = document.querySelectorAll('#menu a')
+  const sections = document.querySelectorAll("body>section");
+  const links = document.querySelectorAll("#menu a");
 
-    sections.forEach((el) => {
-      if(el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
-        links.forEach((a) => {
-          a.classList.remove('navigation_active');
-          if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
-            a.classList.add('navigation_active');
-          }
-        })
-      }
-    });
-
+  sections.forEach(el => {
+    if (el.offsetTop - 1 <= curPos && el.offsetTop + el.offsetHeight > curPos) {
+      links.forEach(a => {
+        a.classList.remove("navigation_active");
+        if (el.getAttribute("id") === a.getAttribute("href").substring(1)) {
+          a.classList.add("navigation_active");
+        }
+      });
+    }
+  });
 }
 
+//                       --- Screens ---
 
+const SCREN_CONTR_1 = document.getElementById("screen__control_1");
+const SCREN_CONTR_2 = document.getElementById("screen__control_2");
+const SCREN_1 = document.getElementById("Screen_1");
+const SCREN_2 = document.getElementById("Screen_2");
 
+SCREN_CONTR_1.addEventListener("click", event => {
+  SCREN_1.classList.toggle("hidden");
+});
 
-
-
+SCREN_CONTR_2.addEventListener("click", event => {
+  SCREN_2.classList.toggle("hidden");
+});
 
 //                 Portfolio
 //             --- RANDOM-PIC ---
@@ -99,19 +140,38 @@ PORTFOLIO_INER.addEventListener("click", event => {
 });
 
 //                   ---  Form_Get-Quote----
-// const FORM = document.getElementById("form");
+
+const FORM = document.getElementById("myform");
 const BUTTON = document.getElementById("button");
 const CLOSE_BUTTON = document.getElementById("close-button");
+const NAME = document.getElementById("fname");
+const EMAIL = document.getElementById("email");
 
-BUTTON.addEventListener("click", (event) => {
-  event.preventDefault();
- const subject = document.getElementById("subject").value;
-  document.getElementById("rez-subject").innerText = subject;
-  document.getElementById("message-block").classList.remove("hidden");
+BUTTON.addEventListener("click", event => {
+  if (FORM.checkValidity()) {
+    event.preventDefault();
+    const subject = document.getElementById("subject").value;
+    if (subject == "") {
+      document.getElementById("rez-subject").innerText = "Без темы";
+    } else {
+      document.getElementById("rez-subject").innerText = `Тема: ${subject} `;
+    }
+    const coment = document.getElementById("coment").value;
+    if (coment == "") {
+      document.getElementById("rez-coment").innerText = "Без описания";
+    } else {
+      document.getElementById("rez-coment").innerText = `Описание:  ${coment} `;
+    }
+    document.getElementById("message-block").classList.remove("hidden");
+    NAME.innerText = "";
+    EMAIL.innerText = "";
+  }
 });
 
-CLOSE_BUTTON.addEventListener("click", (event) => {
+CLOSE_BUTTON.addEventListener("click", event => {
+  FORM.reset();
   document.getElementById("rez-subject").innerText = "";
+  document.getElementById("rez-coment").innerText = "";
   document.getElementById("message-block").classList.add("hidden");
 });
 
@@ -277,6 +337,14 @@ var multiItemSlider = (function() {
         _transformItem(direction);
         clearInterval(_interval);
         _cycle(_config.direction);
+        if (!SCREN_1.classList.contains("hidden")) {
+          SCREN_1.classList.add("hidden");
+        }
+        if (!SCREN_2.classList.contains("hidden")) {
+          SCREN_2.classList.add("hidden");
+        }
+        SCREN_CONTR_1.classList.toggle("hidden");
+        SCREN_CONTR_2.classList.toggle("hidden");
       }
     };
 
