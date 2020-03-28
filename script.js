@@ -36,16 +36,12 @@ BURGER_MENU.addEventListener("click", event => {
 
 //             ---  Header  ---
 
-
-
-
 document.addEventListener("scroll", onScroll);
 
 function onScroll(event) {
   const curPos = window.scrollY;
   const sections = document.querySelectorAll("body>section");
   const links = document.querySelectorAll("#menu a");
-  
 
   sections.forEach(el => {
     if (el.offsetTop - 1 <= curPos && el.offsetTop + el.offsetHeight > curPos) {
