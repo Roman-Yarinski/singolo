@@ -6,14 +6,18 @@ const BURGER_CLOSE = document.getElementById("BURGER_CLOSE");
 const BURGER_LINK = document.getElementsByClassName("burger__link");
 const BURGER_BLOK = document.getElementById("burger-block");
 const BURGER_MENU = document.getElementById("burger_menu");
+const BODY = document.getElementById("body");
 
 BURGER.addEventListener("click", event => {
   event.preventDefault();
   BURGER_BLOK.classList.remove("hidden");
+  BODY.classList.add("scroll-hidden");
 });
 
 BURGER_CLOSE.addEventListener("click", event => {
+  event.preventDefault();
   BURGER_BLOK.classList.add("hidden");
+  BODY.classList.remove("scroll-hidden");
 });
 
 
@@ -24,23 +28,15 @@ BURGER_MENU.addEventListener("click", event => {
   );
   event.target.classList.add("navigation_active");
   BURGER_BLOK.classList.add("hidden");
+  BODY.classList.remove("scroll-hidden");
 });
-
-
 
 /* /Burger */
 
 
 //             ---  Header  ---
 
-// const MENU = document.getElementById("menu");
 
-// MENU.addEventListener("click", event => {
-//   MENU.querySelectorAll("a").forEach(el =>
-//     el.classList.remove("navigation_active")
-//   );
-//   event.target.classList.add("navigation_active");
-// });
 
 
 document.addEventListener("scroll", onScroll);
@@ -49,6 +45,7 @@ function onScroll(event) {
   const curPos = window.scrollY;
   const sections = document.querySelectorAll("body>section");
   const links = document.querySelectorAll("#menu a");
+  
 
   sections.forEach(el => {
     if (el.offsetTop - 1 <= curPos && el.offsetTop + el.offsetHeight > curPos) {
